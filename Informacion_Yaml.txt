@@ -1,0 +1,11 @@
+Links para comenzar el proyecto.
+
+	YAML
+	*https://circleci.com/blog/what-is-yaml-a-beginner-s-guide/
+	*https://geekflare.com/es/yaml-introduction/
+	*https://onthedock.github.io/post/170525-introduccion-a-yaml/
+
+	
+	Yaml AWS
+	*https://docs.aws.amazon.com/es_es/AWSCloudFormation/latest/UserGuide/working-with-templates-cfn-designer-json-editor.html
+	*https://docs.aws.amazon.com/es_es/AWSCloudFormation/latest/UserGuide/quickref-cloudfront.html
