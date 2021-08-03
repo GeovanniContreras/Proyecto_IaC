@@ -1,0 +1,95 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Metadata": {
+        "AWS::CloudFormation::Designer": {
+            "89b009bf-0923-4bd5-9e7d-da447f7446d4": {
+                "size": {
+                    "width": 330,
+                    "height": 300
+                },
+                "position": {
+                    "x": 150,
+                    "y": 30
+                },
+                "z": 0,
+                "embeds": [
+                    "a360daf6-203a-4b8c-a4a0-9a1f1a12a4c4"
+                ]
+            },
+            "a360daf6-203a-4b8c-a4a0-9a1f1a12a4c4": {
+                "size": {
+                    "width": 140,
+                    "height": 140
+                },
+                "position": {
+                    "x": 230,
+                    "y": 63
+                },
+                "z": 1,
+                "parent": "89b009bf-0923-4bd5-9e7d-da447f7446d4",
+                "embeds": [
+                    "e272910b-e6a6-4682-b161-f7305c706f3b"
+                ],
+                "iscontainedinside": [
+                    "89b009bf-0923-4bd5-9e7d-da447f7446d4"
+                ]
+            },
+            "e272910b-e6a6-4682-b161-f7305c706f3b": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 279,
+                    "y": 94
+                },
+                "z": 2,
+                "parent": "a360daf6-203a-4b8c-a4a0-9a1f1a12a4c4",
+                "iscontainedinside": [
+                    "a360daf6-203a-4b8c-a4a0-9a1f1a12a4c4"
+                ]
+            }
+        }
+    },
+    "Resources": {
+        "GeovanniAndehui": {
+            "Type": "AWS::EC2::VPC",
+            "Properties": {},
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "89b009bf-0923-4bd5-9e7d-da447f7446d4"
+                }
+            }
+        },
+        "PublicSubnet": {
+            "Type": "AWS::EC2::Subnet",
+            "Properties": {
+                "VpcId": {
+                    "Ref": "GeovanniAndehui"
+                }
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "a360daf6-203a-4b8c-a4a0-9a1f1a12a4c4"
+                }
+            }
+        },
+        "WebServerInstance": {
+            "Type": "AWS::EC2::Instance",
+            "Properties": {
+                "NetworkInterfaces": [
+                    {
+                        "SubnetId": {
+                            "Ref": "PublicSubnet"
+                        }
+                    }
+                ]
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "e272910b-e6a6-4682-b161-f7305c706f3b"
+                }
+            }
+        }
+    }
+}
