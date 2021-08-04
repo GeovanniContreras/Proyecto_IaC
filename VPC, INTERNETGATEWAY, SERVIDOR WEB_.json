@@ -1,5 +1,5 @@
 {
-  "AWSTemplateFormatVersion": "2010-09-09",
+  "AWSTemplateFormatVersion": "GeovanniAndehui",
   "Description": "AWS CloudFormation Sample Template VPC_ELB_AS_In_Subnet: Sample template showing how to create a VPC, a load balancer, and Auto Scaling group. **WARNING** This template creates an Amazon EC2 instance. You will be billed for the AWS resources used if you create a stack from this template.",
   "Parameters": {
     "InstanceType": {
