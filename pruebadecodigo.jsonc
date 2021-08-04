@@ -51,33 +51,16 @@
             }
         }
     },
-    "Resources": {
-        "GeovanniAndehui": {
-            "Type": "AWS::EC2::VPC",
-            "Properties": {},
-            "Metadata": {
-                "AWS::CloudFormation::Designer": {
-                    "id": "89b009bf-0923-4bd5-9e7d-da447f7446d4"
-                }
-            }
+  
         },
-        "PublicSubnet": {
+        "PublicSubnetGioAndehui": {
             "Type": "AWS::EC2::Subnet",
             "Properties": {
                 "VpcId": {
                     "Ref": "GeovanniAndehui"
                 }
             },
-            "Metadata": {
-                "AWS::CloudFormation::Designer": {
-                    "id": "a360daf6-203a-4b8c-a4a0-9a1f1a12a4c4"
-                }
-            }
-        },
-            "Metadata": {
-                "AWS::CloudFormation::Designer": {
-                    "id": "e272910b-e6a6-4682-b161-f7305c706f3b"
-                }
+       
             }
         }
     }
